@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="dynamic.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"]
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <div id="movieReviewsContainer" class="flex flex-col justify-start items-start">
+        <h1 class="self-center font-bold text-xl m-5">Movie Reviews</h1>
+        <div class="p-2 flex flex-col justify-start items-start self-stretch">
+            <h1 class="text-black-50 text-[10px] font-bold">MOVIE TITLE</h1>
+            <input id="titleInput" type="text" class="p-2 self-stretch" />
+        </div>
+        <div class="p-2 flex flex-col justify-start items-start self-stretch">
+            <h1 class="text-black-50 text-[10px] font-bold">YOUR REVIEW</h1>
+            <input id="reviewTextarea" type="text" class="p-2 self-stretch" />
+        </div>
+        <button id="addBtn" onclick="addReview()" class="m-2 text-white bg-[blue] p-1 rounded self-end">Add</button>
+        <div id="reviewsContainer">
+
+        </div>
+    </div>
+</body>
+
+</html>
