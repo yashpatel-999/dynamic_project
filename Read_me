@@ -1,0 +1,6 @@
+By following the above instructions, achieve the given functionality.
+
+When the HTML button element with the id addBtn is clicked,
+If the value of the HTML input element with the id titleInput is not empty,
+Add the text entered in titleInput and reviewTextarea to the reviewsContainer.
+Make the values of titleInput and reviewTextarea empty.
